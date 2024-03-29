@@ -1,0 +1,116 @@
+.header-main {
+    width: 100%;
+
+}
+
+.header-one-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4px;
+    background-color: rgb(49, 113, 93);
+}
+
+.header-one-right {
+    background-color: rgba(255, 255, 255, 0.949);
+    padding: 8px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.522);
+}
+
+.headerone-icons {
+    height: 32px;
+    width: 32px;
+    padding: 0px;
+    margin-right: 8px;
+    padding-bottom: 4px;
+
+}
+
+.headerone-icons:hover {
+    transform: scale(1.15);
+    transition: .3s;
+    border-bottom: 1px solid grey;
+}
+
+.headerone-number {
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+}
+
+.headerone-number:hover {
+    color: rgb(156, 220, 133);
+    text-decoration: underline;
+    transition: .5s ease-in;
+
+}
+
+/* headerTwo-main started*/
+.headerTwo-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 2px 2px 4px rgba(128, 128, 128, 0.404);
+}
+
+.header-logo {
+    width: 100px;
+    height: 80px;
+}
+
+.headertwo-menu {
+    width: 35px;
+    height: 35px;
+}
+
+.header-nav-list {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+}
+
+.header-nav-items {
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+.header-nav-items-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-bottom: 4px;
+    font-size: 18px;
+}
+
+
+
+.header-nav-items-link {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+}
+
+.header-nav-items-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(141, 4, 61);
+    /* Change to your desired border color */
+    transition: width 0.3s ease;
+}
+
+.header-nav-items-link:hover::after {
+    width: 100%;
+}
