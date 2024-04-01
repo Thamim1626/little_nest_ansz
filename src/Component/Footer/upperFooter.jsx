@@ -2,7 +2,7 @@ import './style.css'
 
 const UpperFooter = () => {
     return (
-        <div className='upper-footer'>
+        <div className='upper-footer p-4'>
             <div className='upper-footer-left'>
                 <h1 className="upper-footer-heading">Let's Connect with us</h1>
                 <p className="upper-footer-des">We Provide the best custom Decoration For You</p>

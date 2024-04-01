@@ -696,6 +696,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
+
       const scrollY = window.scrollY;
       setShowHeader(scrollY <= 120);
     };
@@ -706,6 +707,7 @@ function App() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
   const removeDuplicatesById = (arr) => {
     // Create an empty map to store unique objects based on id
     const map = new Map();

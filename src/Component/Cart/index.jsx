@@ -1,8 +1,12 @@
 import ProductDetail from "../../Context"
 import { Link } from "react-router-dom"
 import CartItem from "./cartItem"
+import { useEffect } from "react"
 import './style.css'
 const Cart = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <ProductDetail.Consumer>
             {
