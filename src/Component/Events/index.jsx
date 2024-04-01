@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie';
 import React from 'react';
-
+import { useEffect } from 'react';
 
 import './style.css'
 import EventItems from './eventItem';
@@ -683,7 +683,9 @@ const eventsList = [
 
 
 const Events = () => {
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className="event-main">
             <div className="event-landing">
