@@ -1,0 +1,145 @@
+.footer-main {
+    width: 100%;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/272/223/748/birthday-celebration-happy-holiday-wallpaper-thumb.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-main-inner {
+    background-color: rgba(0, 0, 0, 0.484);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 6px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+@media (min-width:768px) {
+    .footer-items {
+        width: 45%;
+    }
+}
+
+@media (min-width:1200px) {
+    .footer-items {
+        width: 23%;
+    }
+}
+
+.footer-main-des {
+    font-size: 16px;
+    margin-top: 30px;
+    text-align: justify;
+
+    font-weight: 500;
+    color: rgb(241, 243, 244);
+
+}
+
+.footer-heading {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(203, 238, 28);
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.footer-contact-list {
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.footer-contact-item-icons {
+    margin-right: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.footer-contact-item-des {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-top: 4px;
+}
+
+.upper-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.upper-footer-heading {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(238, 123, 28);
+}
+
+.upper-footer-des {
+    font-size: 22px;
+    color: rgb(99, 99, 101);
+    font-family: sans-serif;
+}
+
+.upper-footer-button {
+    background-color: rgba(136, 0, 255, 0.823);
+    color: white;
+    font-weight: bold;
+}
+
+.upper-footer-left {
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.upper-footer-right {
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.upper-footer-button:hover {
+    color: rgba(136, 0, 255, 0.823);
+    background-color: transparent;
+    box-shadow: 2px 2px 4px rgb(136, 0, 225);
+    transition: .6s ease-in-out;
+}
+
+@media (min-width:768px) {
+    .upper-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 22px;
+        box-sizing: border-box;
+        height: 200px;
+    }
+
+    .upper-footer-right {
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

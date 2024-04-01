@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 4px;
-    background-color: rgb(49, 113, 93);
+    background-color: #f1c22e;
 }
 
 .header-one-right {
@@ -51,6 +51,7 @@
 
 /* headerTwo-main started*/
 .headerTwo-main {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -75,6 +76,11 @@
     text-decoration: none;
     list-style: none;
     margin: 0px;
+}
+
+.sm-icons-con {
+    justify-content: flex-end;
+    margin-left: auto;
 }
 
 .header-nav-items {
@@ -113,4 +119,84 @@
 
 .header-nav-items-link:hover::after {
     width: 100%;
+}
+
+.header-cart-container {
+    margin-right: 12px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header-cart-count {
+    align-self: flex-start;
+    margin-left: -8px;
+    margin-bottom: 0px;
+    background-color: rgb(31, 79, 130);
+    font-weight: 500;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+}
+
+.menu-main {
+    width: 100vh;
+    height: 100vh;
+    align-self: flex-start;
+}
+
+.menu-main-inner {
+    width: 50%;
+    height: 100vh;
+    min-width: 200px;
+    max-width: 350px;
+    background-color: rgba(0, 0, 0, 0.699);
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.close-button-menu {
+    color: red;
+    border: 2px solid white;
+    padding: 8px;
+    margin: 0px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-weight: bolder;
+    align-self: flex-end;
+    margin: 20px;
+}
+
+.sm-menu-list {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.sm-menu-item {
+    margin-top: 8px;
+}
+
+.header-nav-items-link-sm {
+    text-decoration: none;
+    color: white !important;
+}
+
+.sm-menu-footer {
+    width: 100%;
+    height: 60px;
+    background-color: #f1c22e;
+    padding: -12px;
 }

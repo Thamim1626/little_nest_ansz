@@ -2,3 +2,31 @@
     padding: 0px;
     margin: 0px;
 }
+
+body {
+    scroll-behavior: smooth;
+}
+
+/* Apply styles to the scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    /* Width of the scrollbar */
+}
+
+/* Track styles */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the track */
+}
+
+/* Handle styles */
+::-webkit-scrollbar-thumb {
+    background: #a71688;
+    /* Color of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color of the handle on hover */
+}

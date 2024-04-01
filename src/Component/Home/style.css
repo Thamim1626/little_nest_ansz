@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&display=swap');
+
+.main-home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-landing {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-position: right;
+    background-size: cover;
+
+
+}
+
+.main-landing-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-landing-right {
+    width: 50%;
+    display: none;
+
+}
+
+@media (min-width:768px) {
+    .main-landing-left {
+        width: 50%;
+
+    }
+
+    .main-landing-right {
+        display: flex;
+    }
+}
+
+.landing-text-section {
+    width: 80%;
+    color: white;
+    text-shadow: 4px 4px 4px black;
+}
+
+.landing-des {
+    font-size: 30px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0px;
+    color: yellow;
+}
+
+.landing-heading {
+    font-size: 52px;
+    font-family: open-serif;
+    font-weight: bolder;
+    margin-bottom: 16px;
+}
+
+.landing-button {
+    width: 136px;
+    background-color: rgb(67, 5, 31);
+    font-weight: bold;
+    font-family: sans-serif;
+    box-shadow: 2px 2px 4px black;
+    color: white;
+}
+
+.landing-button:hover {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    background-color: rgba(67, 5, 31, 0.23);
+}
+
+/* program started */
+
+.program-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.program-card {
+    width: 80%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 16px;
+    padding-bottom: 50px;
+}
+
+.program-card:hover {
+    transform: scale(1.1);
+    transition: .7s;
+}
+
+@media (min-width:768px) {
+    .program-main {
+        width: 90%;
+        flex-wrap: nowrap;
+    }
+
+    .program-card {
+        width: 33%;
+        margin-top: -80px;
+        background-color: red;
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+}
+
+.program-card-head {
+    background-color: red;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -56px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.program-card-head-icons {
+    font-size: 36px;
+    color: white;
+
+}
+
+.program-card-heading {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    width: 90%;
+    margin-bottom: 12px;
+}
+
+.program-card-sub-heading {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color: rgb(23, 1, 38);
+    margin-bottom: 22px;
+}
+
+.program-card-des {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.welcome-main {
+    width: 90%;
+    align-self: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 4px rgba(11, 1, 1, 0.433);
+    border-radius: 12px;
+}
+
+.welcome-inner {
+    margin-top: 12px;
+    width: 100%;
+    padding: 18px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+@media (min-width:992px) {
+    .welcome-main {
+        flex-direction: row;
+    }
+}
+
+.welcome-image {
+    width: 80%;
+}
+
+.welcome-welcome {
+    font-size: 30px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0px;
+    color: rgb(76, 2, 49);
+    margin-bottom: 12px;
+}
+
+.welcome-welcome-des {
+    color: grey;
+    font-size: 18px;
+}
+
+.welcome-button {
+    width: 130px;
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgb(69, 8, 37);
+    color: rgb(69, 8, 37);
+    font-weight: bold;
+    align-self: center;
+    margin-top: 12px;
+}
+
+.welcome-button:hover {
+    color: white;
+    background-color: rgb(69, 8, 37);
+    transition: .7s ease-in-out;
+}
+
+/* company detail section filling */
+.company-detail-count-main {
+    background-image: url('https://marketplace.canva.com/EAENvp21inc/1/0/1600w/canva-simple-work-linkedin-banner-qt_TMRJF4m0.jpg');
+    width: 100%;
+    min-height: 240px;
+    background-size: cover;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.company-detail-count-inner {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.company-detail-count-inner-heading {
+
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transform: rotate(45deg);
+    border-radius: 12px;
+}
+
+.company-detail-count-inner-heading-content {
+    transform: rotate(-45deg);
+    font-size: 32px;
+
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.company-detail-count-inner-des {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.popula-heading {
+    width: 90%;
+    align-self: center;
+    margin-top: 32px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: sienna;
+}
+
+.home-seemore-event {
+    width: 150px;
+    align-self: center;
+    margin-bottom: 20px;
+    height: 36px;
+    color: white;
+    font-weight: bold;
+    background-color: green;
+    box-shadow: 2px 2px 4px grey;
+}

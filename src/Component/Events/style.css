@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&display=swap');
+
+.event-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.event-landing {
+    width: 100%;
+    height: 250px;
+    background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-1.2.1&w=1000&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.event-main-list {
+    list-style: none;
+    padding: 0px;
+    align-self: center;
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.event-main-item {
+    width: 100%;
+    height: 100%;
+    max-width: 480px;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F8F8;
+    border-radius: 14px;
+
+}
+
+.event-main-item:hover {
+    box-shadow: 8px 8px 12px rgba(17, 151, 209, 0.596);
+    transition: .4s;
+}
+
+@media (min-width:768px) {
+    .event-main-item {
+        width: 45%;
+    }
+}
+
+@media (min-width:992px) {
+    .event-main-item {
+        width: 30%;
+    }
+}
+
+.event-item-image-section {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.event-item-image {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.event-item-image:hover {
+    transform: scale(1.1);
+    transition: .7s ease-in-out;
+    box-shadow: -8px -8px 12px rgba(17, 151, 209, 0.596);
+}
+
+.event-item-second-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.event-item-name {
+    font-size: 22px;
+    color: #fd4d40;
+    margin: 0px;
+}
+
+.event-item-price {
+    font-size: 22px;
+    margin: 0px;
+    color: #f1c22e;
+}
+
+.event-item-mini-des {
+    padding: 0px 12px;
+    margin-top: 16px;
+    font-size: 18px;
+    font-family: "Coming Soon", cursive;
+    font-weight: 600;
+    font-style: normal;
+    color: #A1A1A1;
+    margin-bottom: 30px;
+}
+
+.event-item-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.event-item-footer-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FD4D40;
+    color: white;
+    border-bottom-left-radius: 14px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.event-item-footer-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1C22E;
+    color: white;
+    border-bottom-right-radius: 14px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.event-item-modal {
+    width: 400px;
+    padding: 20px;
+    background-color: rgb(86, 6, 31);
+    color: white;
+    transition: 1s;
+    border-radius: 14px;
+    box-shadow: 4px 4px 8px rgba(115, 241, 96, 0.522);
+}

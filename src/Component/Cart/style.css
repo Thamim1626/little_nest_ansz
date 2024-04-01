@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Pacifico&family=Poppins&family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Metal+Mania&family=Pacifico&family=Poppins&family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Metal+Mania&family=Pacifico&family=Poppins&family=Reddit+Mono:wght@200..900&family=Rubik+Scribble&display=swap');
+
+.cart-main {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-heading {
+    font-size: 42px;
+    margin-top: 14px;
+    width: 90%;
+    align-self: center;
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cart-list {
+    width: 90%;
+    padding: 0px;
+    list-style: none;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.cart-item {
+    width: 100%;
+    box-shadow: 2px 2px 4px rgba(164, 44, 92, 0.395);
+    border-radius: 12px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+    box-sizing: border-box;
+    min-height: 120px;
+    max-height: 200px;
+    background-color: rgb(238, 253, 227);
+}
+
+.cart-item-left {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-item-images {
+    width: 35%;
+    max-height: 180px;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 12px;
+
+}
+
+.cart-item-text {
+    width: 60%;
+    font-weight: bold;
+}
+
+.cart-item-text-heading {
+    font-size: 18px;
+    font-family: "Coming Soon", cursive;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(66, 7, 85);
+}
+
+.cart-items-price {
+    font-size: 14px;
+    margin-bottom: 0px;
+
+}
+
+@media (min-width:768px) {
+
+    .cart-item-text-heading {
+        font-size: 26px;
+    }
+
+    .cart-items-price {
+        font-size: 18px;
+    }
+
+}
+
+.cart-know-button {
+    margin-top: 12px;
+    background-color: green;
+
+    color: white;
+    font-weight: bold;
+}
+
+.cart-del-button {
+    font-size: 32px;
+    color: red;
+    /* height: 40px;
+    width: 40px; */
+}
+
+.empty-cart {
+    width: 90%;
+    max-width: 900px;
+    background-color: rgba(75, 102, 79, .1);
+
+    border-radius: 12px;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.empty-cart-image {
+    width: 70%;
+    max-width: 350px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px rgba(153, 51, 75, 0.264);
+}
+
+.empty-cart-heading {
+    margin-top: 12px;
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cart-total-main {
+    width: 90%;
+    padding: 0px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.order-total {
+    color: grey;
+}
+
+.order-total-span {
+    color: rgb(4, 4, 20);
+}
+
+.number-order-item {
+    font-size: 22px;
+    color: grey;
+}
