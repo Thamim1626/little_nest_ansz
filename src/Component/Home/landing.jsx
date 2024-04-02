@@ -34,6 +34,7 @@ const Landing = () => {
                 </div>
 
             </div>
+
             <div className="main-landing-right "></div>
 
         </div>

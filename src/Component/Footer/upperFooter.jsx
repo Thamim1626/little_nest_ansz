@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './style.css'
 
 const UpperFooter = () => {
@@ -8,7 +9,10 @@ const UpperFooter = () => {
                 <p className="upper-footer-des">We Provide the best custom Decoration For You</p>
             </div>
             <div className='upper-footer-right'>
-                <button className="btn upper-footer-button">CONTACT US</button>
+                <Link to='/contacts'>
+                    <button className="btn upper-footer-button">CONTACT US</button>
+                </Link>
+
             </div>
 
         </div>

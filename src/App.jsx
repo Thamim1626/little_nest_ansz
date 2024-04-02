@@ -764,7 +764,7 @@ function App() {
             <Route exact path='/cartlist' element={<Cart />} />
 
           </Routes>
-          <UpperFooter />
+
           <Footer />
         </ProductDetail.Provider>
 
