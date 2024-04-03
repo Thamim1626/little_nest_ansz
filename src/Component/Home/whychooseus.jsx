@@ -14,24 +14,24 @@ const WhyChooseUs = () => {
                         </p>
                         <ul className="choose-list mt-4">
                             <li className="choose-item">
-                                <img src='https://www.pngall.com/wp-content/uploads/9/Green-Tick-Vector-PNG-Image-HD.png' alt='tic' className="tic-image" />
+                                <img src='https://static.vecteezy.com/system/resources/previews/008/134/818/large_2x/check-mark-icon-checkmark-right-symbol-tick-sign-ok-button-correct-circle-icon-free-vector.jpg' alt='tic' className="tic-image" />
                                 <p className="choose-item-content">A professional birthday party planner
                                     that specializes in planning, organizing
                                     and managing birthday parties</p>
                             </li>
                             <li className="choose-item">
-                                <img src='https://www.pngall.com/wp-content/uploads/9/Green-Tick-Vector-PNG-Image-HD.png' alt='tic' className="tic-image" />
+                                <img src='https://static.vecteezy.com/system/resources/previews/008/134/818/large_2x/check-mark-icon-checkmark-right-symbol-tick-sign-ok-button-correct-circle-icon-free-vector.jpg' alt='tic' className="tic-image" />
                                 <p className="choose-item-content">Hire our services for your events</p>
                             </li>
                             <li className="choose-item">
-                                <img src='https://www.pngall.com/wp-content/uploads/9/Green-Tick-Vector-PNG-Image-HD.png' alt='tic' className="tic-image" />
+                                <img src='https://static.vecteezy.com/system/resources/previews/008/134/818/large_2x/check-mark-icon-checkmark-right-symbol-tick-sign-ok-button-correct-circle-icon-free-vector.jpg' alt='tic' className="tic-image" />
                                 <p className="choose-item-content">We use majority of the profit or surplus
                                     to celebrate a less priviledged kid's
                                     birthday at an orphanage home or a blue
                                     tented community</p>
                             </li>
                             <li className="choose-item">
-                                <img src='https://www.pngall.com/wp-content/uploads/9/Green-Tick-Vector-PNG-Image-HD.png' alt='tic' className="tic-image" />
+                                <img src='https://static.vecteezy.com/system/resources/previews/008/134/818/large_2x/check-mark-icon-checkmark-right-symbol-tick-sign-ok-button-correct-circle-icon-free-vector.jpg' alt='tic' className="tic-image" />
                                 <p className="choose-item-content"> Support us in fulfilling our mission in
                                     making these little ones birthday a
                                     little more special.</p>

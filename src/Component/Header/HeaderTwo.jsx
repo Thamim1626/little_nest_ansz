@@ -30,9 +30,9 @@ const HeaderTwo = () => {
                                 <li className="header-nav-items">
                                     <Link to='/' className="header-nav-items-link" style={location.pathname === '/' ? { color: 'white', backgroundColor: 'orange', padding: '4px 8px', borderRadius: '4px' } : { color: 'black' }}>Home</Link>
                                 </li>
-                                <li className="header-nav-items">
+                                {/* <li className="header-nav-items">
                                     <Link to='/about' className="header-nav-items-link" style={location.pathname === '/about' ? { color: 'white', backgroundColor: 'orange', padding: '4px 8px', borderRadius: '4px' } : { color: 'black' }}>About</Link>
-                                </li>
+                                </li> */}
                                 <li className="header-nav-items">
                                     <Link to='/events' className="header-nav-items-link" style={location.pathname === '/events' ? { color: 'white', backgroundColor: 'orange', padding: '4px 8px', borderRadius: '4px' } : { color: 'black' }}>Events</Link>
                                 </li>
@@ -53,9 +53,9 @@ const HeaderTwo = () => {
                                                 <li className="sm-menu-item" onClick={() => { close() }}>
                                                     <Link to='/' className="header-nav-items-link-sm" style={location.pathname === '/' ? { color: 'white', backgroundColor: 'orange', padding: '4px 8px', borderRadius: '4px' } : { color: 'black' }}>Home</Link>
                                                 </li>
-                                                <li className="sm-menu-item" onClick={() => { close() }}>
+                                                {/* <li className="sm-menu-item" onClick={() => { close() }}>
                                                     <Link to='/about' className="header-nav-items-link-sm" style={location.pathname === '/about' ? { color: 'white', backgroundColor: 'orange', padding: '4px 8px', borderRadius: '4px' } : { color: 'black' }}>About</Link>
-                                                </li>
+                                                </li> */}
                                                 <li className="sm-menu-item" onClick={() => { close() }}>
                                                     <Link to='/events' className="header-nav-items-link-sm" style={location.pathname === '/events' ? { color: 'white', backgroundColor: 'orange', padding: '4px 8px', borderRadius: '4px' } : { color: 'black' }}>Events</Link>
                                                 </li>
