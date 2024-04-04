@@ -12,6 +12,7 @@ import Footer from './Component/Footer';
 import UpperFooter from './Component/Footer/upperFooter';
 import ProductDetail from './Context';
 import Cart from './Component/Cart';
+import Packages from './Component/Package';
 const allProductList = [
   {
     id: 1,
@@ -761,6 +762,7 @@ function App() {
             <Route exact path='/about' element={<About />} />
             <Route exact path='/events' element={<Events />} />
             <Route exact path='/contacts' element={<Contacts />} />
+            <Route exact path='/package' element={<Packages />} />
             <Route exact path='/cartlist' element={<Cart />} />
 
           </Routes>

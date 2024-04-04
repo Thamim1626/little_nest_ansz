@@ -1,6 +1,7 @@
 import { BiArrowFromLeft } from 'react-icons/bi'
 import './style.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+
 const Contacts = () => {
     const [formDetails, updateFormDetails] = useState({
         name: '',
@@ -10,7 +11,10 @@ const Contacts = () => {
         subject: ''
     })
     const [finalFormDetail, updateFinal] = useState({})
-    console.log(finalFormDetail)
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="contact-main">
             <div className="contact-landing">

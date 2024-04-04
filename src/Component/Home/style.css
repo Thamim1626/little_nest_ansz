@@ -104,8 +104,8 @@
 }
 
 .program-card:hover {
-    transform: scale(1.05);
-    transition: .7s;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.259);
+    transition: .4s;
 
 }
 

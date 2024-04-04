@@ -6,9 +6,14 @@ import Welcome from './welcome';
 import HomeCount from './homeCount';
 import PopularEvent from './popular';
 import WhyChooseUs from './whychooseus';
+import { useEffect } from 'react';
 
 
 const Home = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className='main-home'>
             <Landing />
