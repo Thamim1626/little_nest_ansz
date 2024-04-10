@@ -108,7 +108,9 @@
     text-align: justify;
 }
 
+
 .package-des-item {
     color: rgb(4, 4, 31);
     font-family: sans-serif;
+    padding: 0px;
 }
