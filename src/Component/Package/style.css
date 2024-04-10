@@ -107,3 +107,8 @@
     font-size: 18px;
     text-align: justify;
 }
+
+.package-des-item {
+    color: rgb(4, 4, 31);
+    font-family: sans-serif;
+}
