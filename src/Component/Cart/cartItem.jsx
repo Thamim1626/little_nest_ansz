@@ -1,8 +1,44 @@
+
+import { useEffect, useState } from 'react';
 import { MdOutlineDeleteOutline } from "react-icons/md";
-import Popup from 'reactjs-popup';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
 import ProductDetail from "../../Context";
+
+function ModalFunction(props) {
+    const { desDetails, heading } = props
+    return (
+        <Modal
+            {...props}
+            size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+        >
+            <Modal.Header closeButton>
+                <Modal.Title id="contained-modal-title-vcenter">
+                    Events Description
+                </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                <h4 className='mb-4'>{heading}</h4>
+                <p>
+                    {desDetails}
+                </p>
+            </Modal.Body>
+            <Modal.Footer>
+                <Button variant='danger' onClick={props.onHide}>Close</Button>
+            </Modal.Footer>
+        </Modal>
+    );
+}
+
+
+
+
 const CartItem = (props) => {
     const { eachItem } = props
+    const [modalShow, setModalShow] = useState(false);
     const { id, imageUrl, eventName, price, miniDescription, description } = eachItem
 
     return (
@@ -20,20 +56,13 @@ const CartItem = (props) => {
                                 <div className="cart-item-text">
                                     <h1 className="cart-item-text-heading">{eventName}</h1>
                                     <p className="cart-items-price">{price}</p>
-                                    <Popup
-
-                                        trigger={
-                                            <button className="btn cart-know-button">Know More</button>
-                                        }
-                                        position='center center'
-                                        on={['hover', 'focus']}
-                                        arrow={false}
-                                        contentStyle={{
-                                            transition: ' 0.6s ease-in-out', // Example transition timing
-                                        }}
-                                    >
-                                        <p className='event-item-modal'>{description}</p>
-                                    </Popup>
+                                    <button className="mt-3 btn btn-danger fw-bold" onClick={() => setModalShow(true)}>Know More</button>
+                                    <ModalFunction
+                                        show={modalShow}
+                                        onHide={() => setModalShow(false)}
+                                        desDetails={eachItem.miniDescription}
+                                        heading={eachItem.eventName}
+                                    />
 
                                 </div>
                             </div>

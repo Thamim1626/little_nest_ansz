@@ -3,6 +3,18 @@ import { Link } from "react-router-dom"
 import CartItem from "./cartItem"
 import { useEffect } from "react"
 import './style.css'
+
+const sendWhatsappMessage = () => {
+    const whatsappUrl = 'https://api.whatsapp.com/send/?phone=919361878011&text=Place+Order%0AName%20%3A%20Thamim%0A%0Aasdf%0Aasdf%0A&type=phone_number&app_absent=0';
+
+    // Open the WhatsApp API link in a new window
+    const whatsappWindow = window.open(whatsappUrl, '_blank');
+
+    // Redirect the user to a success page
+    window.location.href = '/success'; // Change '/success' to the URL of your success page
+}
+
+
 const Cart = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -41,7 +53,8 @@ const Cart = () => {
                             <div className="cart-total-main mt-5">
                                 <h1 className="order-total">Order Total : <span className="order-total-span">{totalPrice}</span>   </h1>
                                 <p className="number-order-item">1 items in cart</p>
-                                <button className="btn btn-success fw-bold mb-4 mt-2 cart-know-button ">Checkout</button>
+
+                                {cartList.length !== 0 && (<button className="btn btn-success fw-bold mb-4 mt-2 cart-know-button " onClick={() => sendWhatsappMessage()}  >Checkout</button>)}
                             </div>
                         </div>
                     )
@@ -52,3 +65,6 @@ const Cart = () => {
 }
 
 export default Cart
+
+
+// <a href="https://api.whatsapp.com/send/?phone=919019590310&text=Place+Order%0AName%20%3A%20Thamim%0A%0Aasdf%0Aasdf%0A&type=phone_number&app_absent=0"><button className="btn btn-success fw-bold mb-4 mt-2 cart-know-button "  >Checkout</button></a>

@@ -6,5 +6,13 @@ const ProductDetail = React.createContext({
     cartList: prevItemData,
     addCartItem: () => { },
     removeCartItem: () => { },
+    formDate: {
+        name: '',
+        email: '',
+        number: '',
+        city: '',
+        subject: ''
+    },
+    formUpdateContext: () => { }
 })
 export default ProductDetail

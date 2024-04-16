@@ -13,6 +13,7 @@ import UpperFooter from './Component/Footer/upperFooter';
 import ProductDetail from './Context';
 import Cart from './Component/Cart';
 import Packages from './Component/Package';
+import Success from './Component/Success';
 const allProductList = [
   {
     id: 1,
@@ -745,13 +746,16 @@ function App() {
     const stringifyjoinAllCartItem = JSON.stringify(removeCartItem)
     localStorage.setItem('cartToken', stringifyjoinAllCartItem)
   }
+  const formUpdateContext = () => {
+    console.log('formUpdated')
+  }
   return (
     <div className='main-app' >
 
       <BrowserRouter>
         <ProductDetail.Provider value={{
           addCartItem,
-          removeCartItem: removeCartItem,
+          removeCartItem: removeCartItem, formUpdateContext,
           allProductList: allProductList, cartList
         }}>
 
@@ -764,7 +768,7 @@ function App() {
             <Route exact path='/contacts' element={<Contacts />} />
             <Route exact path='/package' element={<Packages />} />
             <Route exact path='/cartlist' element={<Cart />} />
-
+            <Route exact path='/success' element={<Success />} />
           </Routes>
 
           <Footer />
